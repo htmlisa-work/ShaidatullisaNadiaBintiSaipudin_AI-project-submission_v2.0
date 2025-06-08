@@ -11,15 +11,8 @@ The goal is to help teams and HR departments understand sentiment trends, recogn
 ## ⚙️ Setup Instructions
 
 1. Clone this repository or download and extract the ZIP package.
-
 2. Navigate to the project directory.
-
-3. Install dependencies using:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
+3. Install the required dependencies.
 4. Make sure you have Python 3.x installed.
 
 ---
@@ -28,9 +21,9 @@ The goal is to help teams and HR departments understand sentiment trends, recogn
 
 To run the full analysis:
 
-1. Open `FinalLLM_EmployeeSentimentAnalysis.ipynb` in Jupyter Notebook, JupyterLab, or another compatible IDE.
+1. Open `FinalLLMAssessment_EmployeeSentimentAnalysis_Saipudin_v2.0.ipynb` in Jupyter Notebook, JupyterLab, or another compatible IDE.
 2. Run all cells from top to bottom to reproduce the full workflow.
-3. Ensure the dataset `test.csv` is placed inside the `data/` folder.
+3. Ensure the dataset `test.csv` is placed inside the right folder.
 4. Output files will be generated automatically in the appropriate directories.
 
 ---
@@ -39,35 +32,25 @@ To run the full analysis:
 
 Running the notebook will generate:
 
-* `employee_messages_labeled.csv` – sentiment-labeled messages
-* `monthly_sentiment_scores.csv` – per-employee, per-month sentiment scoring
-* `flight_risk_employees.csv` – list of employees flagged as flight risks
-* Visualizations in `project_output/visualizations/`
-* Optional final PDF report in `project_output/`
+* Visualizations in `Visualizations/`
+* CSV in `Output files/`
+
+Check the files for more info
 
 ---
 
 ## 🌟 Highlights
 
-### ✅ Top 3 Positive Employees
-
-* [eric.bass@enron.com](mailto:eric.bass@enron.com)
-* [john.arnold@enron.com](mailto:john.arnold@enron.com)
-* [sally.beck@enron.com](mailto:sally.beck@enron.com)
-
-### ⚠️ Top 3 Negative Employees
-
-* [bobette.riner@ipgdirect.com](mailto:bobette.riner@ipgdirect.com)
-* [don.baughman@enron.com](mailto:don.baughman@enron.com)
-* [rhonda.denton@enron.com](mailto:rhonda.denton@enron.com)
-
 ### 🔥 Employees Flagged as Flight Risks
 
-*(See full list in `flight_risk_employees.csv`)*
+* bobette.riner@ipgdirect.com
+* don.baughman@enron.com
+* eric.bass@enron.com
+* john.arnold@enron.com
+* lydia.delgado@enron.com
+* patti.thompson@enron.com
+* sally.beck@enron.com
 
-* [lydia.delgado@enron.com](mailto:lydia.delgado@enron.com)
-* [john.arnold@enron.com](mailto:john.arnold@enron.com)
-* [patti.thompson@enron.com](mailto:patti.thompson@enron.com)
 
 > **Flight Risk Rule**: Any employee who sent 4 or more negative messages within any 30-day rolling period.
 
