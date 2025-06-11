@@ -21,7 +21,7 @@ The goal is to help teams and HR departments understand sentiment trends, recogn
 
 To run the full analysis:
 
-1. Open `FinalLLMAssessment_EmployeeSentimentAnalysis_Saipudin_v2.0.ipynb` in Jupyter Notebook, JupyterLab, or another compatible IDE.
+1. Open `FinalLLMAssessment_v2_0.ipynb` in Jupyter Notebook, JupyterLab, or another compatible IDE.
 2. Run all cells from top to bottom to reproduce the full workflow.
 3. Ensure the dataset `test.csv` is placed inside the right folder.
 4. Output files will be generated automatically in the appropriate directories.
@@ -41,40 +41,34 @@ Check the files for more info
 
 ## 🌟 Highlights
 
-### 🔥 Employees Flagged as Flight Risks
+**🔥 Employees Flagged as Flight Risks**
 
-* bobette.riner@ipgdirect.com
-* don.baughman@enron.com
-* eric.bass@enron.com
-* john.arnold@enron.com
-* lydia.delgado@enron.com
-* patti.thompson@enron.com
-* sally.beck@enron.com
+Flight Risk Rule: Any employee who sent 4 or more negative messages within any 30-day rolling period.
+* lydia.delgado@enron.com – 110 negative messages
+* john.arnold@enron.com – 109 negative messages
+* patti.thompson@enron.com – 100 negative messages
 
+**🔍 Key Insights**
 
-> **Flight Risk Rule**: Any employee who sent 4 or more negative messages within any 30-day rolling period.
+* Overall Sentiment Balance: Positive messages (≈1,068) slightly outnumber Negative (≈927), while Neutral is rare (≈186), indicating employees mostly express clear approval or concerns.
+* Monthly Mood Cycles: Sentiment scores fluctuate month to month, with peaks (e.g., +4 in Oct/Nov 2010) and troughs (–6 in Aug 2010) for individuals like Bobette Riner, revealing when morale surges or dips.
 
----
+**Top 3 Monthly Positive Employees (Dec 2011):**
 
-## 🔍 Key Insights
+* eric.bass@enron.com 
+* sally.beck@enron.com 
+* john.arnold@enron.com 
 
-* **Sentiment Breakdown**: Positive sentiment was more frequent overall, with negative messages typically being longer and more detailed.
-* **Monthly Trends**: While positivity led overall, recurring negative spikes were observed in some months.
-* **Employee Behavior**: Most employees maintained a balanced tone, but a few stood out with consistently high negativity.
-* **Flight Risk Detection**: Rolling window logic successfully identified individuals showing signs of disengagement.
-* **Model Performance**: The linear regression model explained **\~71%** of sentiment score variation (R² = 0.7075, MSE = 2.45).
+**Top 3 Monthly Negative Employees (Dec 2011):**
 
----
+* bobette.riner@ipgdirect.com 
+* don.baughman@enron.com 
+* rhonda.denton@enron.com 
 
-## 📌 Summary & Recommendations
+Flight-Risk Clusters: Multiple employees repeatedly cross the 4-negative threshold in rolling windows, signaling sustained dissatisfaction rather than one-off events.
 
-* 🎯 **Recognize Top Contributors**: Celebrate consistently positive communicators.
-* 🧩 **Address Chronic Negativity**: Support employees with recurring negative sentiment through feedback loops or HR outreach.
-* 🚨 **Track Flight Risks**: Prioritize flagged individuals for check-ins or intervention.
-* 📈 **Enhance Modeling**: Incorporate more advanced models (e.g., Gradient Boosting) and context features like department/team.
-* 📊 **Set Up Monitoring**: Build a live dashboard to detect short-term sentiment shifts in real time.
-
----
+📌 Summary
+This analysis transforms raw message data into actionable insights: we labeled sentiment with a hybrid NLP+keyword approach, tracked monthly scores to rank top positive/negative performers, flagged those at risk of disengagement, and uncovered clear temporal patterns in morale. By monitoring flying-risk thresholds and celebrating high-positivity contributors, HR teams can proactively support employee engagement and address concerns before they escalate.
 
 ## 👩‍💻 Author
 
