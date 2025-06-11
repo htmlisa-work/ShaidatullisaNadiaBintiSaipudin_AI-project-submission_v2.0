@@ -1,0 +1,7 @@
+month,RankType,employee,monthly_sentiment_score
+2011-12,Top Negative,bobette.riner@ipgdirect.com,-1
+2011-12,Top Negative,don.baughman@enron.com,-1
+2011-12,Top Negative,rhonda.denton@enron.com,0
+2011-12,Top Positive,eric.bass@enron.com,6
+2011-12,Top Positive,sally.beck@enron.com,3
+2011-12,Top Positive,john.arnold@enron.com,2
