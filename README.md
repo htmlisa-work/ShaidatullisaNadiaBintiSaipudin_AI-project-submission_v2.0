@@ -67,7 +67,8 @@ Flight Risk Rule: Any employee who sent 4 or more negative messages within any 3
 
 Flight-Risk Clusters: Multiple employees repeatedly cross the 4-negative threshold in rolling windows, signaling sustained dissatisfaction rather than one-off events.
 
-📌 Summary
+## **📌 Summary**
+
 This analysis transforms raw message data into actionable insights: we labeled sentiment with a hybrid NLP+keyword approach, tracked monthly scores to rank top positive/negative performers, flagged those at risk of disengagement, and uncovered clear temporal patterns in morale. By monitoring flying-risk thresholds and celebrating high-positivity contributors, HR teams can proactively support employee engagement and address concerns before they escalate.
 
 ## 👩‍💻 Author
